@@ -15,3 +15,13 @@ source .env/bin/activate
 ```bash
 pip install -r eggs.txt
 ```
+
+* Install nltk data packages, from python prompt execute these
+
+```bash
+import nltk
+nltk.download() # this opens downloader
+
+# from Models tab, download pos_taggers from Maximum Entropy and HMM
+export NLTK_DATA <Path where the above packages are downloaded>
+```

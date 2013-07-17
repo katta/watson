@@ -1,5 +1,5 @@
 import os
-
+from collections import defaultdict
 
 class Content():
 
@@ -8,10 +8,10 @@ class Content():
 
     def all_documents(self):
         text_files = []
-        documents = []
+        documents = defaultdict(str)
         for root, dirs, files in os.walk(self.path):
             text_files += map(lambda file: os.path.join(root, file), files)
         for filename in text_files:
             with open(filename) as file:
-                documents.append(file.read())
+                documents[filename] = file.read()
         return documents
