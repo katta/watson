@@ -1,4 +1,6 @@
-Prerequisites
+An Automatic Tagging Library for free text content based on Independent Component Analysis technique. 
+
+Setup
 =============
 
 * Install Python 2.7.x
