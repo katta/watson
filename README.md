@@ -1,7 +1,8 @@
-An Automatic Tagging Library for free text content based on Independent Component Analysis technique. 
+Automatic Tagging Library for free text based on __Independent Component Analysis__ technique. 
 
-Setup
-=============
+[![Build Status](https://travis-ci.org/katta/watson.png?branch=master)](https://travis-ci.org/katta/watson)
+
+### Setup
 
 * Install Python 2.7.x
 * Install virtualenv to manage packages
