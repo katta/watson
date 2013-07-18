@@ -24,3 +24,15 @@ class WeighingMeasureTest(unittest.TestCase):
         self.assertEqual(document_frequencies["cisco"], 2)
         self.assertEqual(document_frequencies["switch"], 1)
         self.assertEqual(document_frequencies["voip"], 1)
+
+    def test_term_frequency_across(self):
+        document1_tokens = ["cisco", "router", "cisco", "switch"]
+        document2_tokens = ["network", "router", "cisco", "bridge", "voip"]
+        tokenized_documents = {"doc1": document1_tokens, "doc2": document2_tokens}
+
+        term_frequencies_across_docs = WeighingMeasure.term_frequencies_across(tokenized_documents)
+
+        self.assertEqual(len(term_frequencies_across_docs.keys()), 6)
+        self.assertEqual(term_frequencies_across_docs["cisco"], 3)
+        self.assertEqual(term_frequencies_across_docs["router"], 2)
+        self.assertEqual(term_frequencies_across_docs["switch"], 1)

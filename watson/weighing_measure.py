@@ -17,3 +17,11 @@ class WeighingMeasure():
             for token in list(set(tokens)):
                 document_frequency[token] += 1
         return document_frequency
+
+    @classmethod
+    def term_frequencies_across(self, tokenized_documents):
+        term_frequencies = defaultdict(long)
+        for docid, tokens in tokenized_documents.iteritems():
+            for token in tokens:
+                term_frequencies[token] += 1
+        return term_frequencies
