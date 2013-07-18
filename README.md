@@ -1,4 +1,4 @@
-Automatic Tagging Library for free text based on __Independent Component Analysis__ technique. 
+__Automatic Tagging Library__ for free text based on __Independent Component Analysis__ technique. 
 
 [![Build Status](https://travis-ci.org/katta/watson.png?branch=master)](https://travis-ci.org/katta/watson)
 
