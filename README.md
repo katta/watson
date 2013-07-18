@@ -28,3 +28,7 @@ nltk.download() # this opens downloader
 # from Models tab, download pos_taggers from Maximum Entropy and HMM
 export NLTK_DATA <Path where the above packages are downloaded>
 ```
+
+### Running Tests
+
+Either use the helper script `./t` or run the command `python -m unittest -v tests`
