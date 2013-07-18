@@ -7,6 +7,3 @@ class TextProcessorTest(unittest.TestCase):
     def test_is_blank(self):
         text_processor = TextProcessor()
         self.assertTrue(text_processor.is_blank(""))
-
-# if __name__ == '__main__':
-#     unittest.main()
