@@ -1,0 +1,42 @@
+T1/T3 E-Learning
+1.  Welcome to Cisco TelePresence E-Learning. 
+2.  Upon completion of this module, you will have basic understanding of the following TelePresence Systems: T3 Immersive, T1 Immersive, T1 Room System, Profile 65”, and Profile 65” Dual.  The following topics will be covered for each system: Product overview, Identifying main, components, Physical location of the components, Logical connection of the components.
+3.  The TelePresence system creates a live, face-to-face meeting experience over the network. It feels like the meeting is in the same room with remote participants. It combines video, audio, and data sharing for collaboration through hardware and software.  The TelePresence covered in this course consists of the following systems: T3 Immersive, T1 Immersive, T1 Room System, Profile 65”, and Profile 65” Dual.  The differences between the immersive and non-immersive systems are size, room treatment and inclusion of an integrated table.  Both the T3 immersive and T1 immersive have special wall treatment such as blue glass and walnut walls.  An immersive room also has custom lighting and an integrated table with a touch panel display for control, customization and navigation.  The T3 immersive system has 3 65” side by side and a single large table to accommodate up to 9 participants.  Participants are immersed in the call because of the HD life size video and high quality audio coming from all the remote end points.   All the TelePresence endpoints are allowed to join multipoint meetings. For example, a T3 Immersive, T1 Room System and a Profile 65” can all be in the same meeting.
+4.  This Table shows the matrix of components for various TelePresence systems.
+5.  Matrix of TelePresence components continue.
+6.  This Table provides a description of various TelePresence components.
+7.  This Table provides a description of various TelePresence components.
+8.  The TelePresence T3 Immersive is installed in a room with wood walls and TANDBERG Blue Nordic-sky-inspired light.  The TelePresence T3 is designed for group meetings of 6 to 9 people.  The room accommodates a single row of table.  The TelePresence T3 is equipped with three 65-inch 1080p HD LCD displays and uses 3 collaboration touch screens built right into the table to display and deliver UXGA presentation.
+9.  The TelePresence T3 contains the following main components:  Three  65-inch LCD display with integrated speaker module, 3  Codec model C90, 2 HDMI Splitter, 1 Presentation Input Switch
+10. 3  Precision HD 1080 p Camera, 1 TelePresence Control Unit (TCU), 3 22-inch Touch Collaboration Screen with a pair of microphones in front of each screen, 7 Power Distribution Blocks, 3  Audio Amplifier (DNAM), and Optional Laptop.
+11. This slide illustrates the physical location of TelePresence T3 Immersive location of Main Components looking from the right side of the room. 
+12. This slide illustrates the physical location of Cisco TelePresence T3 Immersive main components looking from the right.
+13. This slide illustrates the physical location of Cisco TelePresence T3 Immersive main components looking from the right.
+14. This slide illustrates the physical location of Cisco TelePresence T3 Immersive main components looking form the left.
+15. This slide illustrates the logical video layout of TelePresence T3 Immersive.
+16. This slide illustrates the logical audio layout of TelePresence T3 Immersive.
+17. This slide illustrates the logical network layout of TelePresence T3 Immersive. Please note that there are two network connections for the TCU built-in switch A and B; IP/Videonet and Videonet.  The TCU Ethernet port is connected to the built-in switch A.  There is also a patch cable that loops back to the TCU. 
+18. This slide illustrates the logical control layout of TelePresence T3 Immersive.
+19. This slide illustrates the logical power layout of TelePresence T3 Immersive. The AC/DC power supply is typically an AC to 12- or 24-Volt DC power supply. 
+20. The TelePresence T1 Immersive is installed in a room with wood walls and TANDBERG Blue Nordic-sky-inspired lights.  The room accommodates a single table.  The TelePresence T1 is designed for group meetings of 2 to 3 people and is equipped with a single 65-inch 1080p HD LCD display.  The T1 uses one collaboration touch screen built right into the table to display and deliver UXGA presentation for collaboration. 
+21. The TelePresence T1 Immersive contains the following main components: One 65-inch LCD display with integrated speaker module, One Camera, One codec C90, Two microphones, 
+22. Audio Amplifier (DNAM), Presentation Input Video Switch, and TelePresence Control Unit (TCU).
+23. This slide illustrates the physical location of Cisco TelePresence T1 Immersive main components.  Camera is located above the 65-inch display.  Integrated speakers are located right below the display.  The Codec and DNAM are located behind the front cover of the base cabinet below the 65” LCD display.  The TelePresence Control Unit (TCU) and Presentation Input Switch are located inside the table column.  Touch Collaboration Display is located on the tabletop.  Microphones are located below the Touch Collaboration Display.
+24. This slide illustrates the logical video layout of TelePresence T1 Immersive.
+25. This slide illustrates the logical audio layout of TelePresence T1 Immersive.
+26. This slide illustrates the logical network layout of TelePresence T1 Immersive. Please note:  There are two network connections for the TCU built-in switch A and B; IP/Videonet and Videonet.  The TCU Ethernet port is connected to the built-in switch A.  There is also a patch cable that loops back to the TCU. 
+27. This slide illustrates the logical control layout of TelePresence T1 Immersive. 
+28. This slide illustrates the logical power layout of TelePresence T1 Immersive.
+29. The TelePresence T1 Room System is equipped with a 65-inch LCD display, HD Camera, C90 Codec, up to three microphones and a remote control. 
+30. The TelePresence T1 Room System contains the following main components: One 65-inch LCD display with integrated speaker module, One Camera, One codec C90, Audio Amplifier (DNAM), up to 3 microphones, and one remote control.
+31. This slide illustrates the physical location of Cisco TelePresence T1 Room System main components.  Camera is located above the 65-inch display; integrated speaker module is located right below the display.  The C90 Codec and DNAM are located behind the front cover of the base cabinet below the 65-inch LCD display.
+32. This slide illustrates the logical layout of TelePresence T1 Room System. 
+33. The TelePresence Profile 65” is equipped with a 65-inch LCD display, a HD Camera, a C60 Codec, 3 microphones and a remote control.  The TelePresence Profile 65” is virtually identical to the TelePresence Room System except it uses the C60 Codec instead of the C90 Codec. 
+34. The TelePresence Profile 65” contains the following main components: One 65-inch LCD display with integrated speaker module, One Camera, One codec C60, Audio Amplifier (DNAM), 3 microphones, and one remote control.
+35. This slide illustrates the physical location of Cisco TelePresence Profile 65” main components. Camera is located above the 65” display. Integrated Speaker module is located right below the display.  The C60 Codec and DNAM are located behind the front cover of the base cabinet below the 65” LCD display.
+36. This slide illustrates the logical layout of TelePresence Profile 65”.
+37. The TelePresence Profile 65” Dual is equipped with two 65-inch LCD displays, one HD Camera, one C90 Codec, 3 microphones and a remote control. 
+38. The TelePresence T3 contains the following main components: One 65-inch LCD display with integrated speaker module, One Camera, One codec C90, and two microphones.
+39. This slide illustrates the physical location of Cisco TelePresence Profile 65” Dual main components.  One HD camera is located above the left 65” display.  The right 65-inch display is used for Presentation.  Integrated Speaker module is located right below the display.  The Codec and DNAM are located behind the front cover of the base cabinet below the left 65-inch LCD display.
+40. This slide illustrates the logical layout of TelePresence Profile 65” Dual. 
+41. Thank you for taking the Cisco TelePresence family training.
