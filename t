@@ -1,3 +1,11 @@
 #!/usr/bin/env bash
 
-python -m unittest -v tests
+TESTS="tests"
+if [ $# -gt 0 ]; then
+  TESTS=""
+  for test in $*; do
+  	TESTS=$TESTS" tests."$test
+  done
+fi
+
+python -m unittest -v $TESTS
