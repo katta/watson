@@ -11,4 +11,4 @@ class TaggerTest(unittest.TestCase):
         document_tags = Tagger.tag(content_dir)
 
         for doc_id, tags in document_tags.iteritems():
-            print "Doc Id [%s] Tags [%s]" % (doc_id, tags)
+            print "\n\nDoc Id [%s] \nTags [%s]" % (doc_id, tags)
