@@ -1,3 +1,4 @@
+from watson import Document
 from watson import Tokenizer
 import unittest
 
@@ -11,9 +12,10 @@ class TokenizerTest(unittest.TestCase):
 		self.assertEqual(len(tokens),3)
 
 	def test_tokenize_documents(self):
-		document1 = "Matrix of TelePresence components continue"
-		document2 = "This Table provides a description of various TelePresence components like voip."
-		all_documents = {"doc1":document1,"doc2":document2}
+		all_documents = []
+		all_documents.append(Document("doc1", "Matrix of TelePresence components continue"))
+		all_documents.append(Document("doc2", "This Table provides a description of various TelePresence components like voip."))
+
 		tokenized_documents = Tokenizer.tokenize_documents(all_documents)
 
 		self.assertEqual(len(tokenized_documents.keys()),2)

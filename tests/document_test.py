@@ -1,16 +1,23 @@
 import unittest
 import os
 
+from tests.util import Util
 from watson import Document
+
 
 class DocumentTest(unittest.TestCase):
 
     def test_init(self):
-    	tests_dir = os.path.dirname(os.path.abspath(__file__))
-        content_dir = os.path.join(os.path.dirname(tests_dir), "content")
-    	filepath =  os.path.join(content_dir,"file1.txt")
-    	
-    	doc = Document(filepath)
+        filepath = os.path.join(Util.content_dir_path(), "file1.txt")
 
-    	self.assertTrue(len(doc.text()) > 0)
-    	self.assertTrue(doc.text().find("people in charge") != -1)
+        doc = Document(filepath)
+
+        self.assertTrue(len(doc.text()) > 0)
+        self.assertTrue(doc.text().find("people in charge") != -1)
+
+    def test_init_with_txt(self):
+        doc = Document("id", "txt")
+
+        self.assertEqual(doc.text(), "txt")
+        self.assertEqual(doc.id(), "id")
+
