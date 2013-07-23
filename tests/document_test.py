@@ -21,3 +21,8 @@ class DocumentTest(unittest.TestCase):
         self.assertEqual(doc.text(), "txt")
         self.assertEqual(doc.id(), "id")
 
+    def test_tokens(self):
+        doc = Document("id","Matrix of TelePresence components continue")
+        tokens = doc.all_tokens()
+
+        self.assertEqual(len(tokens), 3)
