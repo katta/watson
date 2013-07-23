@@ -10,5 +10,4 @@ class ContentTest(unittest.TestCase):
         content_dir = os.path.join(os.path.dirname(tests_dir), "content")
         all_documents = Content(content_dir).all_documents()
         
-        document_keys = all_documents.keys()
-        self.assertEqual(len(document_keys), 2)
+        self.assertEqual(len(all_documents), 2)

@@ -11,8 +11,8 @@ class Tokenizer():
     @classmethod
     def tokenize_documents(self, documents):
         tokenized_documents = defaultdict(list)
-    	for doc_id, document in documents.iteritems():
-        	tokens = self.tokenize(document)
-        	tokenized_documents[doc_id] = tokens
+    	for document in documents:
+        	tokens = self.tokenize(document.text())
+        	tokenized_documents[document.id()] = tokens
 
     	return tokenized_documents

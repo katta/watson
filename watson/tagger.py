@@ -4,18 +4,18 @@ import math
 
 
 class Tagger():
-    
+
     def tag(self, path_to_document_root):
         content = Content(path_to_document_root)
         documents = content.all_documents()
         document_tags = defaultdict(list)
-        for doc_id, document in documents.iteritems():
+        for document in documents:
             tags = self.significant_tags_per_doc(document, documents)
-            document_tags[doc_id] = tags
+            document_tags[document.id()] = tags
         return document_tags
 
     def significant_tags_per_doc(self, document_to_tag, documents_in_corpus):
-        tokens = Tokenizer.tokenize(document_to_tag)
+        tokens = Tokenizer.tokenize(document_to_tag.text())
         tf_for_given_document = WeighingMeasure.term_frequency_for(tokens)
 
         tokenized_documents = Tokenizer.tokenize_documents(documents_in_corpus)
@@ -23,8 +23,8 @@ class Tagger():
         document_frequencies = WeighingMeasure.document_frequency_for(tokenized_documents)
 
         document_tf_vectors = []
-        for doc_id, document in documents_in_corpus.iteritems():
-            tokens = Tokenizer.tokenize(document)
+        for document in documents_in_corpus:
+            tokens = Tokenizer.tokenize(document.text())
             document_tf_vector = WeighingMeasure.term_frequency_for(tokens)
             document_tf_vectors.append(document_tf_vector)
 

@@ -1,4 +1,5 @@
 import os
+from watson import Document
 from collections import defaultdict
 
 class Content():
@@ -8,10 +9,10 @@ class Content():
 
     def all_documents(self):
         text_files = []
-        documents = defaultdict(str)
+        documents = []
+
         for root, dirs, files in os.walk(self.path):
             text_files += map(lambda file: os.path.join(root, file), files)
-        for filename in text_files:
-            with open(filename) as file:
-                documents[filename] = file.read()
+        for filepath in text_files:
+            documents.append(Document(filepath))
         return documents
