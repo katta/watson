@@ -1,4 +1,4 @@
-from watson import Document
+from watson import Document, Timer
 from collections import defaultdict
 
 
@@ -17,17 +17,25 @@ class Repository():
 
         self.all_documents[document.id()] = document
 
+        timer = Timer()
+        timer.start()
+        print "\nBEGIN tokenizing for doc_id - %s" % (document.id())
         tokens = document.all_tokens()
         self.tokenized_docs[document.id()] = tokens
+        print "FINISHED tokenizing in (%s) seconds" % (timer.lap())
 
         for token in tokens:
             self.all_tokens[token] += 1
+        print "FINISHED calcluating term frequencies in (%s) seconds" % (timer.lap())
 
         for token in list(set(tokens)):
             self.doc_frequency[token] += 1
+        print "FINISHED calcluating document frequencies in (%s) seconds" % (timer.lap())
 
         document_tf_vector = document.term_frequencies()
         self.document_tf_vectors.append(document_tf_vector)
+
+        print "DONE tokenizing for doc_id - %s in (%s) seconds" % (document.id(), timer.end())
 
     def add_all(self, documents):
         for doc in documents:

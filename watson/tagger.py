@@ -31,5 +31,6 @@ class Tagger():
             median_weight = tf_across_documents[token] / float(document_frequencies[token])  # TFIDF
             list_of_deviation_square = map(lambda tf_hash: math.pow((tf_hash[token] - median_weight), 2), document_tf_vectors)
             token_weight[token] = tf_for_given_document[token] * math.sqrt(reduce(lambda x, y: x + y, list_of_deviation_square))
-            sorted_tag_tuples = map(lambda key: (key, token_weight[key]), sorted(token_weight, key=token_weight.get, reverse=True))
+        
+        sorted_tag_tuples = map(lambda key: (key, token_weight[key]), sorted(token_weight, key=token_weight.get, reverse=True))
         return sorted_tag_tuples[:10]
