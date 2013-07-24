@@ -32,4 +32,3 @@ class RepositoryTest(unittest.TestCase):
 
         self.assertEqual(doc1.id(), "d1")
         self.assertEqual(doc2.text(), "doc 2 text")
-        self.assertTrue(self.rep.find_doc_by_id("someid") is None)

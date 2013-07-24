@@ -1,5 +1,5 @@
 import os
-from watson import Tokenizer
+from watson import Tokenizer, WeighingMeasure
 
 
 class Document():
@@ -20,7 +20,10 @@ class Document():
         return self.path
 
     def all_tokens(self):
-        if len(self.tokens) > 0 :
+        if len(self.tokens) > 0:
             return self.tokens
         self.tokens = Tokenizer.tokenize(self.content)
         return self.tokens
+
+    def term_frequencies(self):
+        return WeighingMeasure.term_frequency_for(self.all_tokens())
