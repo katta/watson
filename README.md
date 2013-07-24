@@ -26,6 +26,15 @@ python setup.py
 # export NLTK_DATA <Path where the above packages are downloaded>
 ```
 
+### Usage
+
+* After the setup you can run the following script against a document directory to generate most significant tags
+
+```bash
+./run.py <content directory path>
+
+```
+
 ### Running Tests
 
 Either use the helper script `./t` or run the command `python -m unittest -v tests`
