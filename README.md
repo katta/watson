@@ -23,7 +23,6 @@ pip install -r eggs.txt
 
 ```bash
 python setup.py
-# export NLTK_DATA <Path where the above packages are downloaded>
 ```
 
 ### Usage
@@ -32,7 +31,6 @@ python setup.py
 
 ```bash
 ./run.py <content directory path>
-
 ```
 
 ### Running Tests
