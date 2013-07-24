@@ -1,4 +1,5 @@
 import os
+from collections import defaultdict
 from watson import Tokenizer, WeighingMeasure
 
 
@@ -7,6 +8,8 @@ class Document():
     def __init__(self, path, txt=None):
         self.path = path
         self.tokens = []
+        self.term_frequency = defaultdict(long)
+
         if txt is not None:
             self.content = txt
         else:
@@ -26,4 +29,6 @@ class Document():
         return self.tokens
 
     def term_frequencies(self):
-        return WeighingMeasure.term_frequency_for(self.all_tokens())
+        if len(self.term_frequency) == 0:
+            self.term_frequency = WeighingMeasure.term_frequency_for(self.all_tokens())
+        return self.term_frequency
